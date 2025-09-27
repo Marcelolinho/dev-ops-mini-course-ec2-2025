@@ -14,6 +14,7 @@ document.querySelector('#app').innerHTML = `
     <h1>Hello Vite!</h1>
     <div class="card">
       <button id="counter" type="button"></button>
+      <p>FUNCIONOU AAAAAAAAAAAAAAAAA!</p>
     </div>
     <p class="read-the-docs">
       Click on the Vite logo to learn more

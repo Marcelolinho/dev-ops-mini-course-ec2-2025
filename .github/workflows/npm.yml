@@ -59,6 +59,6 @@ jobs:
         run: | 
           ls -alh 
           mkdir -p ~/.ssh
-          echo "${{ secrets.KOEHLERLABS_KEY_PROD }}" > ~/.ssh/koehlerlabs-key-prod.pem
-          chmod 600 ~/.ssh/koehlerlabs-key-prod.pem
-          scp -i ~/.ssh/koehlerlabs-key-prod.pem  -o StrictHostKeyChecking=no -r dist/* ubuntu@ec2-3-89-243-20.compute-1.amazonaws.com:/var/www/html/mini-curso-devops
+          echo "${{ secrets.MINICURSO_AWS_KEY }}" > ~/.ssh/minicurso_aws_key.pem
+          chmod 600 ~/.ssh/minicurso_aws_key.pem
+          scp -i ~/.ssh/minicurso_aws_key.pem  -o StrictHostKeyChecking=no -r dist/* ubuntu@ec2-3-89-243-20.compute-1.amazonaws.com:/var/www/html/mini-curso-devops
